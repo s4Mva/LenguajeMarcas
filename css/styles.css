@@ -1,10 +1,41 @@
+/* ==========================
+    ESTILO GENERAL DE LA WEB
+  ============================ */ 
+
+* {
+    BOX-SIZING: border-box;
+}
+
+body {
+
+    margin: 0;
+    from-family: 'arial, Helvetica, sans-serif';
+    color: #e8edf5;
+
+   /* FONDO PRINCIPAL DE LA WEB  */ 
+    background: linear-gradient(
+    135deg,#0b1120,#111c35,#182b4a
+    );
+
+    min-height: 100vh;
+
+}
+
+
+/* ==========================
+    CABECERA DE LA WEB
+  ============================ */ 
+
+header {
+    background-color: #080e1b;
+    padding: 25px 8%;
+    border-bottom: 2px solid #2563eb;
+}
+
+
+
 
 /* Logo de la tienda */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
 
 .logo img {
     display: block;
@@ -12,7 +43,16 @@
     height: 100px !important;
     max-width: 150px;
     object-fit: contain;
+    margin-left: 15px;
 }
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 
 .logo h1 {
     margin: 0;

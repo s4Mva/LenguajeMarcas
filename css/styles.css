@@ -58,3 +58,138 @@ header {
     margin: 0;
     font-size: 28px;
 }
+
+header p {
+    color: #aab8ce;
+    margin-bottom: 0;
+}
+
+/* =========================
+   NAVEGACIÓN
+   ========================= */
+
+nav {
+    background-color: #111c35;
+    padding: 15px 8%;
+}
+
+nav a {
+    color: #e8edf5;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+   ========================= */
+
+main {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Secciones como tarjetas */
+section,
+article {
+    background-color: #17243a;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid #263b5c;
+}
+
+/* Títulos */
+h2 {
+    color: #60a5fa;
+    margin-top: 0;
+}
+
+h3 {
+    color: #93c5fd;
+}
+
+/* Párrafos */
+p {
+    line-height: 1.7;
+}
+
+/* Imágenes de contenido */
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* =========================
+   ENLACES Y BOTONES
+   ========================= */
+
+a {
+    color: #60a5fa;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* =========================
+   PIE DE PÁGINA
+   ========================= */
+
+footer {
+    background-color: #080e1b;
+    color: #aab8ce;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #263b5c;
+}
+
+/* =========================
+   ADAPTACIÓN A MÓVILES
+   ========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        padding: 15px5 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px 12px 8px 0;
+    }
+
+    main {
+        width: 92%;
+        margin: 20px auto;
+    }
+
+    section,
+    article {
+        padding: 18px;
+    }
+}

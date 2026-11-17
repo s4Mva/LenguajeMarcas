@@ -2,6 +2,11 @@
     ESTILO GENERAL DE LA WEB
   ============================ */ 
 
+:root {
+    --espaciado-lg: 2rem;
+
+}
+
 * {
     BOX-SIZING: border-box;
 }
@@ -9,12 +14,12 @@
 body {
 
     margin: 0;
-    from-family: 'arial, Helvetica, sans-serif';
+    font-family: 'arial, Helvetica, sans-serif';
     color: #e8edf5;
 
-   /* FONDO PRINCIPAL DE LA WEB  */ 
+   /* FONDO PRINCIPAL DE LA WEB GRADIENTE  */ 
     background: linear-gradient(
-    135deg,#0b1120,#111c35,#182b4a
+    135deg,#0b1120,#221135,#240035
     );
 
     min-height: 100vh;
@@ -70,14 +75,18 @@ header p {
 
 nav {
     background-color: #111c35;
-    padding: 15px 8%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
 }
 
 nav a {
     color: #e8edf5;
     text-decoration: none;
-    margin-right: 25px;
     font-weight: bold;
+    margin-right: 0;
 }
 
 nav a:hover {
@@ -92,12 +101,18 @@ main {
     width: 85%;
     max-width: 1200px;
     margin: 40px auto;
+    background: linear-gradient(
+    135deg,#0b1120,#221135,#240035
+    );
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: var(--espaciado-lg);
+    align-items: start;
 }
 
 /* Secciones como tarjetas */
-section,
 article {
-    background-color: #17243a;
+    
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 12px;
@@ -105,7 +120,7 @@ article {
 }
 
 /* Títulos */
-h2 {
+.section h2 {
     color: #60a5fa;
     margin-top: 0;
 }
@@ -161,35 +176,25 @@ footer {
 }
 
 /* =========================
-   ADAPTACIÓN A MÓVILES
+   MENU DE PAGINAS
    ========================= */
 
-@media (max-width: 600px) {
-
-    header {
-        padding: 20px;
-    }
-
-    .logo h1 {
-        font-size: 24px;
-    }
-
-    nav {
-        padding: 15px5 20px;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 8px 12px 8px 0;
-    }
-
-    main {
-        width: 92%;
-        margin: 20px auto;
-    }
-
-    section,
-    article {
-        padding: 18px;
-    }
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    padding: 10px 0px;
 }
+/* =========================
+   ESTILO CARD
+   ========================= */
+
+   .card {
+    background-color: #111c35;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #263b5c;
+
+   }

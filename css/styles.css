@@ -12,8 +12,9 @@
 }
 
 body {
-
+    
     margin: 0;
+    line-height: 1.4;
     font-family: 'arial, Helvetica, sans-serif';
     color: #e8edf5;
 
@@ -82,6 +83,7 @@ nav {
     gap: 25px;
 }
 
+
 nav a {
     color: #e8edf5;
     text-decoration: none;
@@ -90,7 +92,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #60a5fa;
+    color: #ff5f15;
 }
 
 /* =========================
@@ -145,23 +147,8 @@ main img {
    ENLACES Y BOTONES
    ========================= */
 
-a {
-    color: #60a5fa;
-}
 
-button {
-    background-color: #2563eb;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-}
 
-button:hover {
-    background-color: #1d4ed8;
-}
 
 /* =========================
    PIE DE PÁGINA
@@ -182,7 +169,7 @@ footer {
 .menu {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: left;
     gap: 25px;
     padding: 10px 0px;
 }
@@ -197,4 +184,9 @@ footer {
     margin-bottom: 20px;
     border: 1px solid #263b5c;
 
+   }
+
+   .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
    }
